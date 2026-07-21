@@ -72,7 +72,17 @@ export function returnGame(
     throw new DomainError('ALREADY_RETURNED', `Loan ${loanId} was returned already`);
   }
 
-  const fee = computeLateFee(loan, returnedAt);
+  const game = findGame(store, loan.gameId);
+  if (game === undefined) {
+    throw new DomainError('NOT_FOUND', `No game with id ${loan.gameId}`);
+  }
+
+  const member = findMember(store, loan.memberId);
+  if (member === undefined) {
+    throw new DomainError('NOT_FOUND', `No member with id ${loan.memberId}`);
+  }
+
+  const fee = computeLateFee(loan, game, member, returnedAt);
 
   loan.returnedAt = returnedAt;
   if (options.missingPieces !== undefined) {
