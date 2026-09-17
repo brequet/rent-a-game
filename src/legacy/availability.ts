@@ -6,10 +6,6 @@ import type { Game, Loan, Reservation } from '../domain/types';
 
 const DAY_MS = 86_400_000;
 
-function sameUtcDay(first: Date, second: Date): boolean {
-  return Math.floor(first.getTime() / DAY_MS) === Math.floor(second.getTime() / DAY_MS);
-}
-
 /** Whether the game can be handed to a member at `at`. */
 export function isGameAvailable(
   game: Game,
@@ -26,12 +22,15 @@ export function isGameAvailable(
       continue;
     }
 
-    if (reservation.start.getTime() <= at.getTime() && at.getTime() < reservation.end.getTime()) {
+    const started = reservation.start.getTime() <= at.getTime();
+    const stillRunning = at.getTime() < reservation.end.getTime();
+
+    if (started && stillRunning) {
       return false;
     }
   }
 
-  let missingPiecesToday = false;
+  let incompleteToday = false;
 
   for (const loan of loans) {
     if (loan.gameId !== game.id) {
@@ -51,8 +50,12 @@ export function isGameAvailable(
       continue;
     }
 
-    missingPiecesToday = true;
+    incompleteToday = true;
   }
 
-  return !missingPiecesToday;
+  return !incompleteToday;
+}
+
+function sameUtcDay(left: Date, right: Date): boolean {
+  return Math.floor(left.getTime() / DAY_MS) === Math.floor(right.getTime() / DAY_MS);
 }
