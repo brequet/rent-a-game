@@ -1,18 +1,31 @@
 import type { Store } from '../store';
 import type { Member } from '../domain/types';
 
-const HEADER = 'id;name;email;type';
+function toTitleCase(value: string): string {
+  return value
+    .toLowerCase()
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
 
-function toRow(member: Member): string {
-  return [member.id, member.name, member.email, member.type].join(';');
+function toRow(member: Member): Record<string, string> {
+  return {
+    id: member.id,
+    name: toTitleCase(member.name),
+    email: member.email,
+    type: member.type,
+  };
 }
 
 /**
  * The member list as a semicolon-separated file, ready for the office suite the front
- * desk uses.
+ * desk uses. Names are written the way the desk wants to read them.
  */
 export function toCsv(members: readonly Member[]): string {
-  const lines = [HEADER, ...members.map(toRow)];
+  const header = Object.keys(toRow(members[0])).join(';');
+  const lines = [header, ...members.map((member) => Object.values(toRow(member)).join(';'))];
+
   return `${lines.join('\n')}\n`;
 }
 
