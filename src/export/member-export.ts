@@ -30,5 +30,8 @@ export function toCsv(members: readonly Member[]): string {
 }
 
 export function exportMembers(store: Store): string {
+  const emails = store.members.map((member) => member.email);
+  console.log(`[member-export] ${emails.length} members: ${emails.join(', ')}`);
+
   return toCsv(store.members);
 }
