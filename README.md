@@ -34,6 +34,12 @@ Late fees are 0.50 EUR per day, capped at 5 EUR per loan.
 | 4 | Catch the slop | review | 20-25 min |
 | 5 | Touch the scary file | leverage with a safety net | 30-40 min |
 | 6 | The file bites back (optional) | untrusted content, least privilege | 15-20 min |
+| 7 | Import with guardrails | runtime validation, atomicity | 30-40 min |
+| 8 | Reservations that don't collide | domain modeling, time intervals | 30-40 min |
+| 9 | Find the first bad commit | Git history, causal debugging | 25-35 min |
+| 10 | Close the review | secure implementation, review follow-through | 30-40 min |
+
+Exercises 7-10 start from `ex-07-start` through `ex-10-start`, respectively.
 
 ## How to work
 
