@@ -24,7 +24,7 @@ Read tickets/T-105-reservation-booking.md. List the invalid-date and interval ca
 ```
 
 ```text
-Write tests for invalid dates, reversed or zero-length ranges, overlapping ranges, adjacent ranges, and reservations for another game. Do not implement the feature yet.
+Write tests for invalid dates, reversed or zero-length ranges, overlapping ranges, adjacent ranges, reservations for another game, and an unknown game with invalid dates. Do not implement the feature yet.
 ```
 
 ```text
@@ -48,6 +48,7 @@ Add a table-driven test covering containment in both directions and both adjacen
 - Overlapping reservations for the same game are rejected without changing the store.
 - Adjacent reservations and reservations for a different game are accepted.
 - Invalid dates and reversed or zero-length ranges fail with `INVALID_DATE_RANGE`.
+- An unknown game fails with `NOT_FOUND`, even when the dates are invalid.
 - `npm test` and `npm run typecheck` pass.
 
 ## Retro

@@ -39,11 +39,11 @@ Late fees are 0.50 EUR per day, capped at 5 EUR per loan.
 | 9 | Find the first bad commit | Git history, causal debugging |
 | 10 | Close the review | secure implementation, review follow-through |
 
-## Offline workshop ZIP
+## Workshop ZIP
 
-The ZIP is a full local Git repository. Git needs no GitHub access or remote.
+The facilitator-provided ZIP must come from a full local clone. No GitHub repo access or remote is needed, but npm and Copilot may still need network access.
 
-It contains:
+It must include:
 
 - `.git/` with the full history. Exercise 9 uses it for `git bisect`.
 - Local branch `main`. Exercise 4 diffs against it.

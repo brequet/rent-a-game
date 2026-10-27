@@ -31,7 +31,7 @@ Read tickets/T-106-export-hardening.md. Target: <spreadsheet and use case>. List
 ```
 
 ```text
-Write regression tests for empty input, CSV-special characters, stored-name preservation, logs, and exact serialized output for formula-leading `=`, `+`, `-`, and `@` values. Do not implement the fixes yet.
+Write regression tests for empty input, CSV-special characters, stored-name preservation, logs, and exact serialized output for formula-leading `=`, `+`, `-`, and `@` values, including leading whitespace before each trigger. Do not implement the fixes yet.
 ```
 
 ```text
