@@ -21,11 +21,11 @@ Implement `tickets/T-105-reservation-booking.md`. Add a reservation operation th
 Use these prompts in order:
 
 ```text
-Read tickets/T-105-reservation-booking.md. List the interval cases as a test table and give me a plan only. Do not edit files yet.
+Read tickets/T-105-reservation-booking.md. List the invalid-date and interval cases as a test table and give me a plan only. Do not edit files yet.
 ```
 
 ```text
-Write tests for invalid ranges, overlapping ranges, adjacent ranges, and reservations for another game. Do not implement the feature yet.
+Write tests for invalid dates, reversed or zero-length ranges, overlapping ranges, adjacent ranges, and reservations for another game. Do not implement the feature yet.
 ```
 
 ```text
@@ -48,7 +48,7 @@ Add a table-driven test covering containment in both directions and both adjacen
 
 - Overlapping reservations for the same game are rejected without changing the store.
 - Adjacent reservations and reservations for a different game are accepted.
-- Invalid or zero-length ranges are rejected.
+- Invalid dates and reversed or zero-length ranges fail with `INVALID_DATE_RANGE`.
 - `npm test` and `npm run typecheck` pass.
 
 ## Retro

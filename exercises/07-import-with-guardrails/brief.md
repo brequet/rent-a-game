@@ -6,7 +6,7 @@
 
 ## What you do
 
-Implement the contract in `tickets/T-104-supplier-import.md`. Build a pure validator for supplier data: its input is untrusted `unknown`, and its output must say exactly which rows are usable and which fields need attention. Do not edit the sample file or write anything to the store.
+Implement the contract in `tickets/T-104-supplier-import.md`. Build a pure validator for supplier data: its input is untrusted `unknown`, and its output must report every invalid row and field. If any issue exists, return no game drafts. Do not edit the sample file or write anything to the store.
 
 ## Constraints
 
