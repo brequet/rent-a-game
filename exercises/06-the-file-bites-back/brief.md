@@ -1,7 +1,7 @@
 # 06 — The file bites back (optional)
 
 **Concept:** untrusted content, least privilege
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-06-start`
 
 ## What you do
 

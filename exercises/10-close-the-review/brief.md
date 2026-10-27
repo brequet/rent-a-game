@@ -1,14 +1,14 @@
 # 10 — Close the review
 
 **Concept:** secure implementation, review follow-through
-**Prerequisites:** fresh extraction of the supplied workshop ZIP. Read this brief and `tickets/T-106-export-hardening.md` before switching branches.
+**Prerequisites:** `git checkout ex-10-start`; read this brief and `tickets/T-106-export-hardening.md` before switching branches.
 
 ## What you do
 
-Turn the review findings from Exercise 4 into a safe implementation. The export code lives on local branch `feature/member-export`, so make a new local branch from it without changing the original branch:
+Turn the review findings from Exercise 4 into a safe implementation. The export code lives on `origin/feature/member-export`, so make a new local branch from that ref without changing the original branch:
 
 ```bash
-git switch -c exercise/member-export-hardening feature/member-export
+git switch -c exercise/member-export-hardening origin/feature/member-export
 ```
 
 Implement the ticket, add regression tests, and show how each review finding is addressed. For formula safety, name the target spreadsheet and use case, then choose a mitigation for that target and explain it. CSV output tests alone do not prove safety for every spreadsheet.

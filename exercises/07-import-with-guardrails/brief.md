@@ -1,7 +1,7 @@
 # 07 — Import with guardrails
 
 **Concept:** runtime validation, atomicity
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-07-start`
 
 ## What you do
 

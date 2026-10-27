@@ -1,7 +1,7 @@
 # 04 — Catch the slop
 
 **Concept:** review
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-04-start`
 
 ## What you do
 

@@ -1,7 +1,7 @@
 # 09 — Find the first bad commit
 
 **Concept:** Git history, causal debugging
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-09-start`
 
 ## What you do
 

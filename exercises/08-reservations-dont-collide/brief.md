@@ -1,7 +1,7 @@
 # 08 — Reservations that don't collide
 
 **Concept:** domain modeling, time intervals
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-08-start`
 
 ## What you do
 

@@ -1,7 +1,7 @@
 # 05 — Touch the scary file
 
 **Concept:** leverage with a safety net
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-05-start`
 
 ## What you do
 

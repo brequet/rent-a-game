@@ -1,7 +1,7 @@
 # 02 — Plan, trim, build
 
 **Concept:** steering, scope
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-02-start`
 
 ## What you do
 

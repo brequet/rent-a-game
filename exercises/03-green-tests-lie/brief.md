@@ -1,7 +1,7 @@
 # 03 — Green tests lie
 
 **Concept:** verification
-**Prerequisites:** fresh extraction of the supplied workshop ZIP.
+**Prerequisites:** `git checkout ex-03-start`
 
 ## What you do
 
