@@ -6,7 +6,7 @@
 
 ## Requirement
 
-Harden the CSV export on `origin/feature/member-export` without changing the stored member records.
+Harden the CSV export on local `feature/member-export` without changing the stored member records.
 
 - Keep the fixed header `id;name;email;type`, including for an empty member list.
 - Do not mutate or title-case stored member names. For ordinary values, preserve the text exactly in the CSV; when formula neutralization is needed, apply it only to the serialized field, not to the member record.
@@ -27,6 +27,6 @@ Harden the CSV export on `origin/feature/member-export` without changing the sto
 
 ## Notes
 
-- Work on a new branch based on `origin/feature/member-export`; do not amend that branch.
+- Work on a new branch based on local `feature/member-export`; do not amend that branch.
 - No new dependencies.
 - CSV output tests alone do not prove safety for every spreadsheet. Limit any safety claim to the named target.

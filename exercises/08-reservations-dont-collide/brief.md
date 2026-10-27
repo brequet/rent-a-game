@@ -1,8 +1,7 @@
 # 08 — Reservations that don't collide
 
 **Concept:** domain modeling, time intervals
-**Time:** 30-40 minutes
-**Prerequisites:** `git checkout ex-08-start`
+**Prerequisites:** `git switch workshop/start/ex-08`
 
 ## What you do
 

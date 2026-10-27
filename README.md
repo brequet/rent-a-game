@@ -26,24 +26,35 @@ Late fees are 0.50 EUR per day, capped at 5 EUR per loan.
 
 ## Exercises
 
-| # | Name | Concept | Time |
-|---|------|---------|------|
-| 1 | Where's the truth? | context, tools, evidence | 15-20 min |
-| 2 | Plan, trim, build | steering, scope | 25-30 min |
-| 3 | Green tests lie | verification | 30-35 min |
-| 4 | Catch the slop | review | 20-25 min |
-| 5 | Touch the scary file | leverage with a safety net | 30-40 min |
-| 6 | The file bites back (optional) | untrusted content, least privilege | 15-20 min |
-| 7 | Import with guardrails | runtime validation, atomicity | 30-40 min |
-| 8 | Reservations that don't collide | domain modeling, time intervals | 30-40 min |
-| 9 | Find the first bad commit | Git history, causal debugging | 25-35 min |
-| 10 | Close the review | secure implementation, review follow-through | 30-40 min |
+| # | Name | Concept |
+|---|------|---------|
+| 1 | Where's the truth? | context, tools, evidence |
+| 2 | Plan, trim, build | steering, scope |
+| 3 | Green tests lie | verification |
+| 4 | Catch the slop | review |
+| 5 | Touch the scary file | leverage with a safety net |
+| 6 | The file bites back (optional) | untrusted content, least privilege |
+| 7 | Import with guardrails | runtime validation, atomicity |
+| 8 | Reservations that don't collide | domain modeling, time intervals |
+| 9 | Find the first bad commit | Git history, causal debugging |
+| 10 | Close the review | secure implementation, review follow-through |
 
-Exercises 7-10 start from `ex-07-start` through `ex-10-start`, respectively.
+## Offline workshop ZIP
+
+The ZIP is a full local Git repository. Git needs no GitHub access or remote.
+
+It contains:
+
+- `.git/` with the full history. Exercise 9 uses it for `git bisect`.
+- Local branch `main`. Exercise 4 diffs against it.
+- Local branch `feature/member-export`. Exercises 4 and 10 use it.
+- Local branches `workshop/start/ex-01` through `workshop/start/ex-10`.
+
+Do not delete `.git`. A fresh extraction of the ZIP into a new folder is the safe way to restart after uncommitted work.
 
 ## How to work
 
-1. Open the brief for the exercise you are on: `exercises/NN-slug/brief.md`. It holds the task, the constraints and a self-check.
-2. Start your agent from the repository root. It picks up `AGENTS.md` with the ground rules.
-3. Run `npm test` and `npm run typecheck` as you go.
-4. Every exercise starts from a tag: `git checkout ex-0N-start` takes you back to its starting point. Uncommitted work is discarded by that reset.
+1. Switch to the start branch of your exercise: `git switch workshop/start/ex-NN`.
+2. Open the brief for the exercise you are on: `exercises/NN-slug/brief.md`. It holds the task, the constraints and a self-check.
+3. Start your agent from the repository root. It picks up `AGENTS.md` with the ground rules.
+4. Run `npm test` and `npm run typecheck` as you go.

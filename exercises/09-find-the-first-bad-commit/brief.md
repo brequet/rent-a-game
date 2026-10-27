@@ -1,8 +1,7 @@
 # 09 — Find the first bad commit
 
 **Concept:** Git history, causal debugging
-**Time:** 25-35 minutes
-**Prerequisites:** `git checkout ex-09-start`
+**Prerequisites:** `git switch workshop/start/ex-09`
 
 ## What you do
 

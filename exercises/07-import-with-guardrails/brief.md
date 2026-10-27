@@ -1,8 +1,7 @@
 # 07 — Import with guardrails
 
 **Concept:** runtime validation, atomicity
-**Time:** 30-40 minutes
-**Prerequisites:** `git checkout ex-07-start`
+**Prerequisites:** `git switch workshop/start/ex-07`
 
 ## What you do
 

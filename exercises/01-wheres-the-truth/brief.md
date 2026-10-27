@@ -1,8 +1,7 @@
 # 01 — Where's the truth?
 
 **Concept:** context, tools, evidence
-**Time:** 15-20 minutes
-**Prerequisites:** `git checkout ex-01-start`
+**Prerequisites:** `git switch workshop/start/ex-01`
 
 ## What you do
 

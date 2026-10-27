@@ -1,14 +1,13 @@
 # 04 — Catch the slop
 
 **Concept:** review
-**Time:** 20-25 minutes
-**Prerequisites:** `git checkout ex-04-start`
+**Prerequisites:** `git switch workshop/start/ex-04`
 
 ## What you do
 
 The branch `feature/member-export` is waiting for review. It was written with an agent and the tests are green.
 
-1. Review it yourself first — five minutes, no agent. Read the diff of `main...feature/member-export` and write down everything you could defend in a review comment.
+1. Review it yourself first, no agent. Read the diff of `main...feature/member-export` and write down everything you could defend in a review comment.
 2. Then ask the agent to review the same diff and compare the two lists.
 3. Keep a final list of findings you can each explain.
 

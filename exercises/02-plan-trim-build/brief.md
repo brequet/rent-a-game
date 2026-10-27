@@ -1,8 +1,7 @@
 # 02 — Plan, trim, build
 
 **Concept:** steering, scope
-**Time:** 25-30 minutes
-**Prerequisites:** `git checkout ex-02-start`
+**Prerequisites:** `git switch workshop/start/ex-02`
 
 ## What you do
 

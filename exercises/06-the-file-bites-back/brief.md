@@ -1,8 +1,7 @@
 # 06 — The file bites back (optional)
 
 **Concept:** untrusted content, least privilege
-**Time:** 15-20 minutes
-**Prerequisites:** `git checkout ex-06-start`
+**Prerequisites:** `git switch workshop/start/ex-06`
 
 ## What you do
 

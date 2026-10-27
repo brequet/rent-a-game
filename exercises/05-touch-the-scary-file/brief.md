@@ -1,8 +1,7 @@
 # 05 — Touch the scary file
 
 **Concept:** leverage with a safety net
-**Time:** 30-40 minutes
-**Prerequisites:** `git checkout ex-05-start`
+**Prerequisites:** `git switch workshop/start/ex-05`
 
 ## What you do
 

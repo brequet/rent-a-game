@@ -1,8 +1,7 @@
 # 03 — Green tests lie
 
 **Concept:** verification
-**Time:** 30-35 minutes
-**Prerequisites:** `git checkout ex-03-start`
+**Prerequisites:** `git switch workshop/start/ex-03`
 
 ## What you do
 
