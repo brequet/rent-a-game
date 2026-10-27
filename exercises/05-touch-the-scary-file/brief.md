@@ -1,7 +1,7 @@
 # 05 — Touch the scary file
 
 **Concept:** leverage with a safety net
-**Prerequisites:** `git switch workshop/start/ex-05`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 

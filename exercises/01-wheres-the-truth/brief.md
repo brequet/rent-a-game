@@ -1,7 +1,7 @@
 # 01 — Where's the truth?
 
 **Concept:** context, tools, evidence
-**Prerequisites:** `git switch workshop/start/ex-01`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 

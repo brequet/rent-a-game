@@ -1,7 +1,7 @@
 # 10 — Close the review
 
 **Concept:** secure implementation, review follow-through
-**Prerequisites:** `git switch workshop/start/ex-10`; read this brief and `tickets/T-106-export-hardening.md` before switching branches.
+**Prerequisites:** fresh extraction of the supplied workshop ZIP. Read this brief and `tickets/T-106-export-hardening.md` before switching branches.
 
 ## What you do
 
@@ -27,7 +27,7 @@ Implement the ticket, add regression tests, and show how each review finding is 
 Use these prompts in order:
 
 ```text
-Read tickets/T-106-export-hardening.md. Target: <spreadsheet and use case>. List mitigation options for that target with trade-offs. Give me a test matrix and a plan only. Do not edit files yet.
+Read tickets/T-106-export-hardening.md. Target: <spreadsheet and use case>. List mitigation options for that target with trade-offs, then wait. After I state the mitigation I choose and why it fits that target, give me a test matrix and a plan only. Do not write tests or edit files yet.
 ```
 
 ```text

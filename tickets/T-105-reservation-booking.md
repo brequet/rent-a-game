@@ -9,7 +9,7 @@
 Add `reserveGame(store, gameId, start, end)` in `src/domain/reservations.ts`.
 
 - Error precedence: resolve the game first, then validate dates, then check conflicts. An unknown game fails with `DomainError` code `NOT_FOUND`, even if the dates are invalid.
-- `start` and `end` must be valid `Date` timestamps (`getTime()` is finite), and the range must satisfy `start < end`. Otherwise fail with `INVALID_DATE_RANGE`.
+- `start` and `end` are `Date` values. An invalid timestamp (`getTime()` is not finite) or a range that does not satisfy `start < end` fails with `INVALID_DATE_RANGE`. Non-`Date` values are outside this typed function's contract.
 - A reservation conflicts only with an existing reservation for the same game when their half-open ranges overlap: `existing.start < end && start < existing.end`.
 - A conflict fails with `RESERVATION_CONFLICT`.
 - Adjacent ranges are allowed: one reservation may end exactly when another starts.

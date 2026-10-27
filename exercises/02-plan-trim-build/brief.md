@@ -1,7 +1,7 @@
 # 02 — Plan, trim, build
 
 **Concept:** steering, scope
-**Prerequisites:** `git switch workshop/start/ex-02`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 

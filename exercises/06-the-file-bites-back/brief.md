@@ -1,7 +1,7 @@
 # 06 — The file bites back (optional)
 
 **Concept:** untrusted content, least privilege
-**Prerequisites:** `git switch workshop/start/ex-06`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 

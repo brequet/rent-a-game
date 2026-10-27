@@ -1,7 +1,7 @@
 # 04 — Catch the slop
 
 **Concept:** review
-**Prerequisites:** `git switch workshop/start/ex-04`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 

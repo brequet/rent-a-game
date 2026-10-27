@@ -1,11 +1,11 @@
 # 07 — Import with guardrails
 
 **Concept:** runtime validation, atomicity
-**Prerequisites:** `git switch workshop/start/ex-07`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 
-Implement the contract in `tickets/T-104-supplier-import.md`. Build a pure validator for supplier data: its input is untrusted `unknown`, and its output must report every invalid row and field. If any issue exists, return no game drafts. Do not edit the sample file or write anything to the store.
+Implement the contract in `tickets/T-104-supplier-import.md`. Build a pure validator for supplier data: its input is untrusted `unknown`, and its output must report every invalid root, row and field. If any issue exists, return no game drafts. Do not edit the sample file or write anything to the store.
 
 ## Constraints
 

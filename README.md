@@ -41,20 +41,19 @@ Late fees are 0.50 EUR per day, capped at 5 EUR per loan.
 
 ## Workshop ZIP
 
-The facilitator-provided ZIP must come from a full local clone. No GitHub repo access or remote is needed, but npm and Copilot may still need network access.
+The facilitator provides a ZIP made from a full clone of the final `main` branch. No GitHub access or remote is needed. npm, Copilot, and Nix may still need network access.
 
-It must include:
+The ZIP must include:
 
-- `.git/` with the full history. Exercise 9 uses it for `git bisect`.
+- `.git/` with the full history. Do not delete it: Exercise 9 uses it for `git bisect`.
 - Local branch `main`. Exercise 4 diffs against it.
 - Local branch `feature/member-export`. Exercises 4 and 10 use it.
-- Local branches `workshop/start/ex-01` through `workshop/start/ex-10`.
 
-Do not delete `.git`. A fresh extraction of the ZIP into a new folder is the safe way to restart after uncommitted work.
+Each exercise starts from a fresh extraction of the same ZIP into a new folder. Use a fresh extraction to reset your work.
 
 ## How to work
 
-1. Switch to the start branch of your exercise: `git switch workshop/start/ex-NN`.
+1. Extract a fresh copy of the ZIP into a new folder for your exercise.
 2. Open the brief for the exercise you are on: `exercises/NN-slug/brief.md`. It holds the task, the constraints and a self-check.
 3. Start your agent from the repository root. It picks up `AGENTS.md` with the ground rules.
 4. Run `npm test` and `npm run typecheck` as you go.

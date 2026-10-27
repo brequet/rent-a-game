@@ -1,7 +1,7 @@
 # 03 — Green tests lie
 
 **Concept:** verification
-**Prerequisites:** `git switch workshop/start/ex-03`
+**Prerequisites:** fresh extraction of the supplied workshop ZIP.
 
 ## What you do
 
