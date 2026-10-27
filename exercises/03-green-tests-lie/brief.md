@@ -1,7 +1,6 @@
 # 03 — Green tests lie
 
 **Concept:** verification
-**Time:** 30-35 minutes
 **Prerequisites:** `git checkout ex-03-start`
 
 ## What you do
