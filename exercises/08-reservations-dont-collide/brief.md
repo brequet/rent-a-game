@@ -1,7 +1,7 @@
 # 08 — Reservations that don't collide
 
 **Concept:** domain modeling, time intervals
-**Prerequisites:** `git checkout ex-08-start`
+**Start:** the delivered repository (`main`).
 
 ## What you do
 

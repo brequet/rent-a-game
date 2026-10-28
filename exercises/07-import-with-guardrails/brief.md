@@ -1,7 +1,7 @@
 # 07 — Import with guardrails
 
 **Concept:** runtime validation, atomicity
-**Prerequisites:** `git checkout ex-07-start`
+**Start:** the delivered repository (`main`).
 
 ## What you do
 

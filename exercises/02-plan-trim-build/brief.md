@@ -1,7 +1,7 @@
 # 02 — Plan, trim, build
 
 **Concept:** steering, scope
-**Prerequisites:** `git checkout ex-02-start`
+**Start:** the delivered repository (`main`).
 
 ## What you do
 

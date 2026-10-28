@@ -1,7 +1,7 @@
 # 05 — Touch the scary file
 
 **Concept:** leverage with a safety net
-**Prerequisites:** `git checkout ex-05-start`
+**Start:** the delivered repository (`main`).
 
 ## What you do
 

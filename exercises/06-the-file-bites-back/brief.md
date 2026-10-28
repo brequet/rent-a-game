@@ -1,7 +1,7 @@
 # 06 — The file bites back (optional)
 
 **Concept:** untrusted content, least privilege
-**Prerequisites:** `git checkout ex-06-start`
+**Start:** the delivered repository (`main`). This exercise is read-only.
 
 ## What you do
 

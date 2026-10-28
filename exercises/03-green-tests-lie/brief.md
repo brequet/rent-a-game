@@ -1,7 +1,7 @@
 # 03 — Green tests lie
 
 **Concept:** verification
-**Prerequisites:** `git checkout ex-03-start`
+**Start:** the delivered repository (`main`).
 
 ## What you do
 

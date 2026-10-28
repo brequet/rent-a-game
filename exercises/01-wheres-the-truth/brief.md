@@ -1,7 +1,7 @@
 # 01 — Where's the truth?
 
 **Concept:** context, tools, evidence
-**Prerequisites:** `git checkout ex-01-start`
+**Start:** the delivered repository (`main`). This exercise is read-only.
 
 ## What you do
 

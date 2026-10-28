@@ -1,13 +1,13 @@
 # 04 — Catch the slop
 
 **Concept:** review
-**Prerequisites:** `git checkout ex-04-start`
+**Start:** the delivered repository (`main`). Review target: `origin/feature/member-export`.
 
 ## What you do
 
-The branch `feature/member-export` is waiting for review. It was written with an agent and the tests are green.
+The branch `feature/member-export` is waiting for review. It was written with an agent and the tests are green. On a fresh clone, the ref is `origin/feature/member-export`.
 
-1. Review it yourself first, no agent. Read the diff of `main...feature/member-export` and write down everything you could defend in a review comment.
+1. Review it yourself first, no agent. Read the diff of `main...origin/feature/member-export` and write down everything you could defend in a review comment.
 2. Then ask the agent to review the same diff and compare the two lists.
 3. Keep a final list of findings you can each explain.
 
@@ -24,7 +24,7 @@ The branch `feature/member-export` is waiting for review. It was written with an
 Paste this into your agent:
 
 ```text
-Review the diff `git diff main...feature/member-export`. Give me concrete findings with
+Review the diff `git diff main...origin/feature/member-export`. Give me concrete findings with
 file:line references. No pure style comments unless they hide a behavior change.
 ```
 

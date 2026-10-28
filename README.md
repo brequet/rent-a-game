@@ -39,11 +39,11 @@ Late fees are 0.50 EUR per day, capped at 5 EUR per loan.
 | 9 | Find the first bad commit | Git history, causal debugging |
 | 10 | Close the review | secure implementation, review follow-through |
 
-Exercises 7-10 start from `ex-07-start` through `ex-10-start`, respectively.
+All exercises start from the delivered `main` snapshot. The only extra ref is `origin/feature/member-export`, used by Exercises 4 and 10.
 
 ## How to work
 
 1. Open the brief for the exercise you are on: `exercises/NN-slug/brief.md`. It holds the task, the constraints and a self-check.
 2. Start your agent from the repository root. It picks up `AGENTS.md` with the ground rules.
 3. Run `npm test` and `npm run typecheck` as you go.
-4. Every exercise starts from a tag: `git checkout ex-0N-start` takes you back to its starting point. Uncommitted work is discarded by that reset.
+4. Every exercise starts from the delivered `main` snapshot. To reset between exercises, run `git restore .` and `git clean -fd` (preview with `git clean -nd` first). Uncommitted work is discarded by that reset.

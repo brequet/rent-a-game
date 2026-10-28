@@ -1,7 +1,7 @@
 # 10 — Close the review
 
 **Concept:** secure implementation, review follow-through
-**Prerequisites:** `git checkout ex-10-start`; read this brief and `tickets/T-106-export-hardening.md` before switching branches.
+**Start:** the delivered repository (`main`). Read this brief and `tickets/T-106-export-hardening.md` before switching branches, then create your branch from `origin/feature/member-export`.
 
 ## What you do
 
@@ -10,6 +10,8 @@ Turn the review findings from Exercise 4 into a safe implementation. The export 
 ```bash
 git switch -c exercise/member-export-hardening origin/feature/member-export
 ```
+
+The ticket is on `main`, not on the export branch; read it with `git show main:tickets/T-106-export-hardening.md`.
 
 Implement the ticket, add regression tests, and show how each review finding is addressed. For formula safety, name the target spreadsheet and use case, then choose a mitigation for that target and explain it. CSV output tests alone do not prove safety for every spreadsheet.
 
@@ -27,7 +29,7 @@ Implement the ticket, add regression tests, and show how each review finding is 
 Use these prompts in order:
 
 ```text
-Read tickets/T-106-export-hardening.md. Target: <spreadsheet and use case>. List mitigation options for that target with trade-offs, then wait. After I state the mitigation I choose and why it fits that target, give me a test matrix and a plan only. Do not write tests or edit files yet.
+Read the ticket with `git show main:tickets/T-106-export-hardening.md`. Target: <spreadsheet and use case>. List mitigation options for that target with trade-offs, then wait. After I state the mitigation I choose and why it fits that target, give me a test matrix and a plan only. Do not write tests or edit files yet.
 ```
 
 ```text
